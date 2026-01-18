@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CII-Bench</title>
+  <title>CCPP-Bench</title>
     <style>
         .hidden {
             display: none;
@@ -18,7 +18,7 @@
   <script src="https://kit.fontawesome.com/f8ddf9854a.js" crossorigin="anonymous"></script>
   <meta charset="utf-8">
   <meta name="description" content="Can MLLMs Understand the Deep Implication Behind Chinese Images?">
-  <meta name="keywords" content="CII-Bench, LMM, LMM Evaluation, MLLM, MLLM Evaluation, Multimodal large language model, Vision Language Model, Large Language Model, Large Multimodal Model, artificial intelligence, AI, AGI, artificial general intelligence">
+  <meta name="keywords" content="CCPP-Bench, LMM, LMM Evaluation, MLLM, MLLM Evaluation, Multimodal large language model, Vision Language Model, Large Language Model, Large Multimodal Model, artificial intelligence, AI, AGI, artificial general intelligence">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Can MLLMs Understand the Deep Implication Behind Chinese Images?</title>
 
@@ -48,7 +48,7 @@
 <!--  <script src="./data/results/model_scores.js" defer></script>-->
 <!--  <script src="./visualizer/data/data_public.js" defer></script>-->
 </head>
-<body class="CII-Bench-container">
+<body class="CCPP-Bench-container">
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
@@ -58,32 +58,6 @@
       <span aria-hidden="true"></span>
     </a>
   </div>
-  <!-- <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://tiger-ai-lab.github.io/MAmmoTH/">
-            <b>MAmmoTH</b> <p style="font-size:18px; display: inline; margin-left: 5px;">🔥</p>
-          </a>
-          <a class="navbar-item" href="https://osu-nlp-group.github.io/TableLlama/">
-            TableLlama
-            <a class="navbar-item" href="https://osu-nlp-group.github.io/MagicBrush/">
-              MagicBrush
-            </a>
-            <a class="navbar-item" href="https://osu-nlp-group.github.io/Mind2Web/">
-              Mind2Web
-            </a>
-          </a>
-
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div> -->
 </nav>
 
 
@@ -93,332 +67,135 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title is-bold">
-            <img src="images/logo.png" style="width:1em;vertical-align: middle" alt="Logo">
-            <span class="CII-Bench" style="vertical-align: middle">CII-Bench</span>
+            <span class="CCPP-Bench" style="vertical-align: middle">CCPP-Bench</span>
             </h1>
           <h2 class="subtitle is-3 publication-subtitle">
-            Can MLLMs Understand the Deep Implication Behind Chinese Images?
+            Evaluating and Benchmarking Classical Chinese Poetry-to-Painting for
+Multimodal Large Language Models
           </h2>
-          <p style="color: red; font-size: 1.5em; font-weight: bold;">ACL 2025 Main</p>
-          <!-- <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://xiangyue9607.github.io/" style="text-decoration: none; color: inherit;">Xiang Yue*<sup style="color:#6fbf73;">†,1</sup></a>,
-            </span>
-            <span class="author-block">
-              <a href="https://yuanshengni.github.io/" style="text-decoration: none; color: inherit;">Yuansheng Ni*<sup style="color:#ffac33;">2</sup></a>
-              ,
-            </span>
-            <span class="author-block">
-              <a href="https://drogozhang.github.io/" style="text-decoration: none; color: inherit;">Kai Zhang*<sup style="color:#ed4b82;">3</sup></a>
-              ,
-            </span>
-            <span class="author-block">Tianyu Zheng*<sup style="color:#007bff;">4</sup>,</span><br>
-            <span class="author-block">Ruoqi Liu<sup style="color:#ed4b82;">3</sup>,</span>
-            <span class="author-block">Ge Zhang<sup style="color:#ffac33;">2</sup>,</span>
-            <span class="author-block">Samuel Stevens<sup style="color:#ed4b82;">3</sup>,</span>
-            <span class="author-block">Dongfu Jiang<sup style="color:#ffac33;">2</sup>,</span>
-            <span class="author-block">Weiming Ren<sup style="color:#ffac33;">2</sup>,</span>
-            <span class="author-block">Yuxuan Sun<sup style="color:#007bff;">4</sup>,</span>
-            <span class="author-block">Cong Wei<sup style="color:#ffac33;">2</sup>,</span>
-            <span class="author-block">Botao Yu<sup style="color:#ed4b82;">3</sup>,</span>
-            <span class="author-block">Ruibin Yuan<sup style="color:#ffac33;">5</sup>,</span>
-            <span class="author-block">Renliang Sun<sup style="color:#ffac33;">2</sup>,</span>
-            <span class="author-block">Ming Yin<sup style="color:#9b51e0;">7</sup>,</span>
-            <span class="author-block">Boyuan Zheng<sup style="color:#ed4b82;">3</sup>,</span>
-            <span class="author-block">Zhenzhu Yang<sup style="color:#007bff;">4</sup>,</span>
-            <span class="author-block">Yibo Liu<sup style="color:#ed4b82;">6</sup>,</span>
-            <span class="author-block">Wenhao Huang<sup style="color:#007bff;">4</sup>,</span><br>
-            <span class="author-block">
-              <a href="https://web.cse.ohio-state.edu/~sun.397/" style="text-decoration: none; color: inherit;">Huan Sun*<sup style="color:#ed4b82;">3</sup></a>
-              ,
-          </span>
-          <span class="author-block">
-              <a href="https://ysu1989.github.io/" style="text-decoration: none; color: inherit;">Yu Su*<sup style="color:#ed4b82;">†,3</sup></a>
-              ,
-          </span>
-          <span class="author-block">
-              <a href="https://wenhuchen.github.io/" style="text-decoration: none; color: inherit;">Wenhu Chen*<sup style="color:#ffac33;">†,2</sup></a>
-
-          </span>
-
-          </div>
-
-          <br>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup style="color:#6fbf73;">1</sup>IN.AI Research,</span>
-            <span class="author-block"><sup style="color:#ffac33;">2</sup>University of Waterloo,</span>
-            <span class="author-block"><sup style="color:#ed4b82;">3</sup>The Ohio State University,</span>
-            <span class="author-block"><sup style="color:#007bff;">4</sup>Independent,</span></br>
-            <span class="author-block"><sup style="color:#ffac33;">5</sup>Carnegie Mellon University,</span>
-            <span class="author-block"><sup style="color:#ed4b82;">6</sup>University of Victoria,</span>
-            <span class="author-block"><sup style="color:#9b51e0;">7</sup>Princeton University</span>
-          </div>
-
-          <br>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">*Core Contributors</span><br>
-            <span class="author-block">†Corresponding to:</span>
-            <span class="author-block"><a href="mailto:xiangyue.work@gmail.com">xiangyue.work@gmail.com</a>,</span>
-            <span class="author-block"><a href="mailto:su.809@osu.edu">su.809@osu.edu</a>,</span>
-            <span class="author-block"><a href="mailto:wenhuchen@uwaterloo.ca">wenhuchen@uwaterloo.ca</a></span>
-          </div> -->
-
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <!-- @PAN TODO: change links -->
-                <a href="https://arxiv.org/pdf/2410.13854" class="external-link button is-normal is-rounded">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf" aria-hidden="true"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-               </span>
-<!--              <span class="link-block">-->
-<!--                &lt;!&ndash; @PAN TODO: change links &ndash;&gt;-->
-<!--                <a href="https://zenodo.org/records/10546498"-->
-<!--                   class="external-link button is-normal is-rounded">-->
-<!--                  <span class="icon">-->
-<!--                      <i class="fas fa-file-pdf"></i>-->
-<!--                  </span>-->
-<!--                  <span>zenodo</span>-->
-<!--                </a>-->
-<!--              </span>-->
-              <span class="link-block">
-                <a href="https://huggingface.co/papers/2410.13854" class="external-link button is-normal is-rounded">
-                  <span class="icon">
-                    <p style="font-size:18px">🤗</p>
-                  </span>
-                  <span>HF Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://huggingface.co/datasets/m-a-p/CII-Bench" class="external-link button is-normal is-rounded">
-                  <span class="icon">
-                      <!-- <i class="far fa-images"></i> -->
-                      <p style="font-size:18px">🤗</p>
-                      <!-- 🔗 -->
-                  </span>
-                  <span>Dataset</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://github.com/MING-ZCH/CII-Bench" class="external-link button is-normal is-rounded">
-                  <span class="icon">
-                      <i class="fab fa-github" aria-hidden="true"></i>
-                  </span>
-                  <span>Code</span>
-                </a>
-              </span>
-              <!-- Dataset Link. -->
-
-              <!-- Leaderboard Link. -->
-              <span class="link-block">
-                <a href="#leaderboard"
-                   class="external-link button is-normal is-rounded">
-                  <span class="icon has-text-white">
-<!--                    <i class="fa-solid fa-trophy"></i>-->
-                    <p style="font-size:18px">🏆</p>
-                  </span>
-                  <span>Leaderboard</span>
-                </a>
-              </span>
-
-
-              <!-- Visualization Link. -->
-<!--               <span class="link-block"> -->
-<!--                 <a href="https://eval.ai/web/challenges/challenge-page/2334/overview" -->
-<!--                    class="external-link button is-normal is-rounded"> -->
-<!--                   <span class="icon has-text-white"> -->
-<!--                        <p style="font-size:18px">📖</p> -->
-<!--                      <i class="fa-solid fa-medal"></i>-->
-<!--                   </span> -->
-<!--                   <span>EvalAI</span> -->
-<!--                 </a> -->
-<!--               </span> -->
-              <!-- Twitter Link. -->
-<!--              <span class="link-block">-->
-<!--                <a href="https://twitter.com/GeZhang86038849/status/1749660947223044325"-->
-<!--                   class="external-link button is-normal is-rounded">-->
-<!--                  <span class="icon has-text-white">-->
-<!--                    <i class="fa-brands fa-x-twitter"></i>-->
-<!--                      &lt;!&ndash; <p style="font-size:18px">🌐</p> &ndash;&gt;-->
-<!--                  </span>-->
-<!--                  <span>Twitter</span>-->
-<!--                </a>-->
-<!--              </span>-->
-              <!-- EvalAI Link. -->
-<!--              <span class="link-block">-->
-<!--                <a href="#examples"-->
-<!--                   class="external-link button is-normal is-rounded">-->
-<!--                  <span class="icon has-text-white">-->
-<!--                    <i class="fa-solid fa-book"></i>-->
-<!--                  </span>-->
-<!--                  <span>Examples</span>-->
-<!--                </a>-->
-<!--              </span>-->
+          <p style="color: red; font-size: 1.5em; font-weight: bold;">ACL 2026</p>
             </div>
-
           </div>
-        </h2></div>
+        </div>
       </div>
     </div>
   </div>
 </section>
-<style>
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-  }
-  </style>
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <!-- <div class="hero-body">
-      <img src="static/images/tease_scores.png" alt="Examples from the dataset"/>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
-    </div> -->
-      <!-- <div class="box m-5"> -->
-        <div class="content has-text-centered">
-          <img src="images/composition.png" alt="composition" width="45%">
-          <p> Overview of CII-Bench: CII-Bench comprises 698 images, spanning six domains: Life, Art, Society, Politics, Environment, and Chinese Traditional Culture.</p>
-        </div>
-      <!-- </div> -->
-    </div>
-
-</section>
-
 <section class="section">
   <div class="container" style="margin-bottom: 2vh;">
-    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-<!--        <h2 class="title ">🔔News</h2>-->
-<!--        <div class="content has-text-justified">-->
-<!--          <p>-->
-<!--              <b>🔥[2024-04-26]: Thanks to the support of VLMEvalKit team, now everyone can use <a href="https://github.com/open-compass/vlmevalkit">VLMEvalKit</a> to easily conduct evaluations!</b>-->
-<!--          </p>-->
-<!--          <p>-->
-<!--              <b>🔥[2024-03-14]: Thanks to the support of lmms-eval team, now everyone can use <a href="https://github.com/EvolvingLMMs-Lab/lmms-eval">lmms-eval</a> to easily conduct evaluations!</b>-->
-<!--          </p>-->
-<!--          <p>-->
-<!--              <b>🌟[2024-03-06]: Our evaluation server for the test set is now available on <a href="https://eval.ai/web/challenges/challenge-page/2217/overview">EvalAI</a>. We welcome all submissions and look forward to your participation! 😆</b>-->
-<!--          </p>-->
-<!--      </div>      -->
-        <h2 class="title is-3">Introduction</h2>
+        <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            As the capabilities of Multimodal Large Language Models (MLLMs) continue to improve, the need for higher-order capability evaluation of MLLMs is increasing. However, there is a lack of work evaluating MLLM for higher-order perception and understanding of Chinese visual content.
-            To fill the gap, we introduce the <b>C</b>hinese  <b>I</b>mage  <b>I</b>mplication understanding  <b>Bench</b>mark,  <b>CII-Bench</b>, which aims to assess the higher-order perception and understanding capabilities of MLLMs for Chinese images. 
-            CII-Bench stands out in several ways compared to existing benchmarks. Firstly, to ensure the authenticity of the Chinese context, images in CII-Bench are sourced from the Chinese Internet and manually reviewed, with corresponding answers also manually crafted. Additionally, CII-Bench incorporates images that represent Chinese traditional culture, such as famous Chinese traditional paintings, which can deeply reflect the model's understanding of Chinese traditional culture.
-            Through extensive experiments on CII-Bench across multiple MLLMs, we have made significant findings. 
-            Initially, a substantial gap is observed between the performance of MLLMs and humans on CII-Bench. The highest accuracy of MLLMs attains 64.4%, where as human accuracy averages 78.2%, peaking at an impressive 81.0%. Subsequently, MLLMs perform worse on Chinese traditional culture images, suggesting limitations in their ability to understand high-level semantics and lack a deep knowledge base of Chinese traditional culture. Finally, it is observed that most models exhibit enhanced accuracy when image emotion hints are incorporated into the prompts.
-            We believe that CII-Bench will enable MLLMs to gain a better understanding of Chinese semantics and Chinese-specific images, advancing the journey towards expert artificial general intelligence (AGI).
+            Multimodal large language models (MLLMs) have demonstrated impressive capabilities in 
+generating high-quality images from modern text. However, their performance in Classical Chinese Poetry-to-Painting (CCPP) generation, a vital and enduring part of Chinese literature, remains underexplored. To fill this gap, we propose a novel evaluation benchmark CCPP-Bench, which aims to evaluate the model’s poetry-to-painting generation conditioned on classical Chinese poems. Specifically, we first collect 1,079 correct <poetry, human-painting> pairs, along with their metadata attributes (e.g., dynasty, theme, and explanation). We then utilize 4 representative MLLMs to produce paintings in two input modes (i) poetry-only and (ii) enhancing poetry with explanation. We employ a panel of 8 human experts to assess a total of 8,632 pairs of poetry and model-painting in terms of 6 key dimensions specifically focused on visual quality, faithfulness to poetry, and cultural precision. We comprehensively investigate 6 research questions (RQs) that reveal significant progress and persistent challenges in this task. The study not only promotes the dissemination of ancient poetry culture, but also offers a multimodal creative paradigm “poetry- to-painting” to enhance LLM evaluations. We release CCPP-Bench on Anonymous Github.
           </p>
         </div>
-        <h2 class="title is-3"> Key Insights </h2>
-        <div class="content has-text-justified">
-          <ul>
-            <li>We introduce CII-Bench, the first benchmark designed to assess the understanding of meanings in Chinese images, which poses a significant challenge to current MLLMs.</li>
-            <li>We design a comprehensive evaluation metric based on GPT-4o to evaluate Chinese traditional culture. This metric aligns more closely with human annotations and is better suited for evaluating Chinese traditional painting.</li>
-            <li>Our experimental findings are as follows: 
-              <ol>
-                <li>There is a notable performance gap between MLLMs and humans. Models demonstrate the highest accuracy of 64.4%, while human accuracy average at 78.2% and best at 81.0%.</li>
-                <li>Closed-source models generally outperform open-source models, but the best-performing open-source model surpasses the top closed source model, with a difference of more than 3%.</li>
-                <li>Models perform significantly worse in Chinese traditional culture compared to other domains, indicating that current models still lack sufficient understanding of Chinese culture. Further analysis shows that GPT-4o can only observe the surface-level information, it’s difficult to deeply interpret the complex cultural elements contained in Chinese traditional painting.</li>
-                <li>Incorporating image emotion hints into prompts generally improves model scores, indicating that models struggle with emotional understanding, leading to misinterpretation of the implicit meanings in the images.</li>
-              </ol>
-            </li>
-          </ul>
-        </div> 
       </div>
     </div>
     
   </div>
 </section>
 
-<!-- DATASET SECTION -->
-<section class="hero is-light is-small">
-  <div class="hero-body has-text-centered">
-  <h1 class="title is-1 mmmu">
-    <img src="images/logo.png" style="width:1em;vertical-align: middle" alt="Logo">
-    <span class="mmmu" style="vertical-align: middle">CII-Benchmark</span>
-  </h1>
-  </div>
-</section>
 
 <section class="section">
   <div class="container">
     <div class="columns is-centered has-text-centered">
-      <!-- <div class="column is-full-width has-text-centered"> -->
       <div class="column is-four-fifths">
         <h2 class="title is-3">Overview</h2>
         <div class="content has-text-justified">
           <p>
-            We introduce the <b>C</b>hinese <b>I</b>mage <b>I</b>mplication Understanding <b>Bench</b>mark <b>CII-Bench</b>, a new benchmark measuring the higher-order perceptual, reasoning and comprehension abilities of MLLMs when presented with complex Chinese implication images.
-            These images, including abstract artworks, comics and posters, possess visual implications that require an understanding of visual details and reasoning ability.
-            CII-Bench reveals whether current MLLMs, leveraging their inherent comprehension abilities, can accurately decode the metaphors embedded within the complex and abstract information presented in these images.
-            <img src="images/CII-Bench-sample.png" alt="CII-Bench-sample"  width="75%" class="center">
-          <br>
-          </p><p>
-            CII-Bench contains a total of 698 various Chinese images.
-            These images are manually collected and annotated by 30 undergraduate students from various disciplines and institutions, with sources from multiple renowned Chinese illustration websites.
-            Each image is manually designed with one to three multiple-choice questions, each with six options and only one correct answer.
-            The questions cover the metaphors, symbolism, and detailed understanding of the images.
-            The benchmark includes a total of 800 multiple-choice questions, with 765 questions used to construct the test set and 35 questions used to construct the development and validation set for few-shot tasks.
+            The CCPP project is designed to facilitate research on "Classical Chinese Poetry-to-Painting" generation. It provides a high-quality benchmark, human-created painting samples, MLLM-generated painting outputs, and tools for data processing/evaluation. The project aims to enable reproducible research on evaluating MLLMs’ understanding of classical Chinese culture (poetry, idioms, classical prose) and their cross-modal generation capabilities. We provide a partial dataset (300 samples) and human-painting. The full dataset will be released upon paper acceptance.CCPP-Bench
 
         </p></div>
     </div>
     </div>
 
     <div class="columns is-centered m-6">
-      <div class="column is-full has-text-centered content">
-        <h2 class="title is-3">Statistics</h2>
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="images/CII-Bench-type.png" alt="CII-Bench-type" width="75%">
-              <p> CII-Bench specific image type and domain statistics.</p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="images/statistics.png" alt="statistics" width="90%">
-              <p> Key statistics of the CII-Bench benchmark</p>
-            </div>
-          </div>
-<!--          <div class="box m-5">-->
-<!--            <div class="content has-text-centered">-->
-<!--              <img src="c_static/images/image_type_count.jpg" alt="arithmetic reasoning" width="95%"/>-->
-<!--              <p> Distribution of image types in the CII-Bench dataset</p>-->
-<!--            </div>-->
-<!--          </div>-->
-        </div>
-      </div>
-    </div>
-    <!-- <div class="columns is-centered m-6">
-      <div class="column is-max-desktop has-text-centered">
-        <h2 class="title is-3" id="visualization">Visualization</h2>
-        <iframe src="visualizer/explore.html" style="width: 100%;min-height: 100vh; border-radius: 20px;"></iframe>
-      </div>
-    </div> -->
-  </div>
-</section>
+  <div class="column is-full has-text-centered content">
+    <h2 class="title is-3">Statistics</h2>
 
-<!-- RESULTS SECTION -->
-<section class="hero is-light is-small">
-  <div class="hero-body has-text-centered">
-    <h1 class="title is-1 mmmu">Experiment Results</h1>
+    <table class="table is-bordered is-striped is-hoverable is-centered">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Number</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Total poems</strong></td>
+          <td>1,079</td>
+        </tr>
+        <tr>
+          <td>&nbsp;&nbsp;– Total idioms</td>
+          <td>382</td>
+        </tr>
+        <tr>
+          <td>&nbsp;&nbsp;– Total Shi &amp; Ci</td>
+          <td>466</td>
+        </tr>
+        <tr>
+          <td>&nbsp;&nbsp;– Total Wen Yan Wen</td>
+          <td>231</td>
+        </tr>
+
+        <tr>
+          <td><strong>Total Chinese characters</strong></td>
+          <td>29,565</td>
+        </tr>
+        <tr>
+          <td>Chinese characters per poem</td>
+          <td>Min: 4; Max: 84; Avg: 27.4</td>
+        </tr>
+
+        <tr>
+          <td><strong>Total paintings</strong></td>
+          <td>9,711</td>
+        </tr>
+        <tr>
+          <td>&nbsp;&nbsp;– Total human-painting</td>
+          <td>1,079</td>
+        </tr>
+        <tr>
+          <td>&nbsp;&nbsp;– Total model-painting</td>
+          <td>8,632</td>
+        </tr>
+
+        <tr>
+          <td><strong>Size of painting (MB)</strong></td>
+          <td>Min: 0.41; Max: 10.02; Avg: 1.5</td>
+        </tr>
+      </tbody>
+    </table>
+      <figure class="image is-inline-block">
+      <img src="images/image7.png" alt="The distribution of keywords" style="max-width: 90%;">
+    </figure>
+    <p class="mt-3">
+      The distribution of keywords
+    </p>
+    </table>
+      <figure class="image is-inline-block">
+      <img src="images/image8.png" alt="The distribution of keywords" style="max-width: 90%;">
+    </figure>
+    <p class="mt-3">
+      Fine-grained statistics of CCPP-Bench (one-level), i.e., the total number of samples in terms of different meta-data.
+In particular, we list meta-data attributes classified into poetry-related and painting-related.
+    </p>
+    </table>
+      <figure class="image is-inline-block">
+      <img src="images/image9.png" alt="Fine-grained statistics of CCPP-Bench (two-level). Top: type (primary) and dynasty (secondary); Middle: type
+(primary) and theme (secondary); Bottom: painting techniques (primary) and painting objects (secondary)." style="max-width: 90%;">
+    </figure>
+    <p class="mt-3">
+      Fine-grained statistics of CCPP-Bench (two-level). Top: type (primary) and dynasty (secondary); Middle: type
+(primary) and theme (secondary); Bottom: painting techniques (primary) and painting objects (secondary).
+    </p>
   </div>
+</div>
+
 </section>
-<section class="section">
-  <div class="container">
 
 
 
@@ -429,7 +206,7 @@
         <div class="content">
           <div class="content has-text-justified">
             <p>
-              We conduct systematic experiments on both open-source and closed-source MLLMs using CII-Bench. For each model, we employ eight different configurations: None (zero-shot), 1-shot, 2-shot,
+              We conduct systematic experiments on both open-source and closed-source MLLMs using CCPP-Bench. For each model, we employ eight different configurations: None (zero-shot), 1-shot, 2-shot,
               3-shot, CoT, Domain, Emotion, and Rhetoric. “None” represents the use of a standard prompt
               without any additional information. “Emotion” indicates the inclusion of information related to the
               emotional polarity of the image (e.g., positive, negative) in the prompt, “Domain” involves adding
@@ -890,7 +667,7 @@
           </p>
           <div class="content has-text-centered">
             <img src="images/prompt.png" width="75%">
-          <p>Overall results of different prompts on CII-Bench. The label(Emotion, Domain, Rhetoric) means providing corresponding information for the images in the prompt.
+          <p>Overall results of different prompts on CCPP-Bench. The label(Emotion, Domain, Rhetoric) means providing corresponding information for the images in the prompt.
             The best-performing model in each category is <b>in-bold</b>, and the second best is <u>underlined</u> .</p>
           </div>
 
@@ -901,7 +678,7 @@
         </div>
         <div class="content has-text-centered">
           <img src="images/fewshot.png" width="73%">
-          <p>Few-shot results of different models on the CII-Bench.</p>
+          <p>Few-shot results of different models on the CCPP-Bench.</p>
         </div>
 
       </div>
@@ -912,7 +689,7 @@
         <h2 class="title is-3">Chinese Traditional Culture Evaluation</h2>
         <div class="content has-text-justified">
           <p>
-          <b>Why Choose to Evaluate Chinese Traditional Culture?</b> The Chinese traditional culture category is a distinctive feature of the CII-Bench dataset, where MLLMs consistently score the lowest. 
+          <b>Why Choose to Evaluate Chinese Traditional Culture?</b> The Chinese traditional culture category is a distinctive feature of the CCPP-Bench dataset, where MLLMs consistently score the lowest. 
             Therefore, we need a deeper evaluation of this field to analyze the extent to which MLLM understands Chinese traditional culture.
             We choose to deeply analyze MLLM’s understanding of Chinese traditional culture by evaluating Chinese traditional paintings.
           </p>
@@ -934,7 +711,7 @@
           <p>Evaluation metric and evaluation standard of Chinese traditional painting.</p>
           </div>
           <p>
-          <b>LLM-Based Chinese Traditional Painting Automatic Evaluation</b>. Our experiment utilize the CTC domain data from CII-Bench, comprising 130 Chinese traditional paintings.
+          <b>LLM-Based Chinese Traditional Painting Automatic Evaluation</b>. Our experiment utilize the CTC domain data from CCPP-Bench, comprising 130 Chinese traditional paintings.
           We employ human-written descriptions and implication interpretations as ground truth. 
           We choose GPT-4o to generate descriptions for these images, which are subsequently scored using GPT-4o and our evaluation standard.
           To validate the model’s scoring efficacy, we enlist three PhD students well-versed in Chinese metaphorical imagery to independently score the 130 paintings.
@@ -956,7 +733,7 @@
         <h2 class="title is-3">Error Analysis</h2>
         <div class="content has-text-justified">
           <p>
-            To conduct a comprehensive error analysis of GPT-4o's performance on CII-Bench, we randomly select a total of 100 erroneous samples from various domains, distributed according to their proportions in the dataset. 
+            To conduct a comprehensive error analysis of GPT-4o's performance on CCPP-Bench, we randomly select a total of 100 erroneous samples from various domains, distributed according to their proportions in the dataset. 
             These samples are subjected to in-depth analysis by expert annotators. 
             GPT-4o's errors can be categorized into the following types: Information Neglect, Misunderstanding of Visual Information, Over-Inference, Superficial Reasoning, and Lack of Cultural Background Knowledge. 
           </p>
@@ -1042,1398 +819,3 @@
 <!-------------------------------------------------------------------- END SECTION -------------------------------------------------------------------->
 
 
-<!-- @PAN TODO: bibtex -->
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title is-3 has-text-centered">BibTeX</h2>
-    <pre><code>
-    @inproceedings{zhang2025ciibench,
-      title={Can MLLMs Understand the Deep Implication Behind Chinese Images?},
-      author={Chenhao Zhang and Xi Feng and Yuelin Bai and Xeron Du and Jinchang Hou and Kaixin Deng and Guangzeng Han and Qinrui Li and Bingli Wang and Jiaheng Liu and Xingwei Qu and Yifei Zhang and Qixuan Zhao and Yiming Liang and Ziqiang Liu and Feiteng Fang and Min Yang and Wenhao Huang and Chenghua Lin and Ge Zhang and Shiwen Ni},
-      booktitle={ACL},
-      year={2025}
-}
-</code></pre>
-  </div>
-</section>
-
-<footer class="footer">
-  <!-- <div class="container"> -->
-    <div class="content has-text-centered">
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is website adapted from <a href="https://mmmu-benchmark.github.io/;">MMMU</a>, licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-  <!-- </div> -->
-
-</footer>
-
-<script>
-  // function changeButtonText() {
-  //   var button = document.getElementById('toggleButton');
-  //   if (button.innerHTML.includes("Test Set Leaderboard")) {
-  //     button.innerHTML = "<b style='font-size: larger;'>Validation Set Leaderboard</b> (Click to Switch)";
-  //   } else {
-  //     button.innerHTML = "<b style='font-size: larger;'>Test Set Leaderboard</b> (Click to Switch)";
-  //   }
-  // }
-  document.addEventListener('DOMContentLoaded', function() {
-    var tables = document.querySelectorAll('table');
-
-    tables.forEach(function(table) {
-        if (!table) return;
-
-        var initialRows = Array.from(table.rows).slice(1);
-        table.addEventListener('click', function(event) {
-            var clickedCell = event.target.closest('td, th');
-            if (!clickedCell) return;
-            var headerRow = clickedCell.parentNode;
-            var columnIndex = Array.from(headerRow.cells).indexOf(clickedCell);
-            var type = clickedCell.getAttribute('data-type');
-
-            if (headerRow.rowIndex === 0) {
-                if (columnIndex === 0) {
-                    table.tBodies[0].innerHTML = '';
-                    initialRows.forEach(row => table.tBodies[0].appendChild(row.cloneNode(true)));
-                }
-            }
-        });
-    });
-});
-
-function sortTable(table, column, type, asc) {
-    var tbody = table.tBodies[0];
-    var rows = Array.from(tbody.rows);
-
-    rows.sort(function(a, b) {
-        var valA = a.cells[column].textContent;
-        var valB = b.cells[column].textContent;
-
-        if (type === 'number') {
-            valA = parseFloat(valA);
-            valB = parseFloat(valB);
-        }
-
-        return asc ? valA - valB : valB - valA;
-    });
-
-    rows.forEach(row => tbody.appendChild(row));
-}
-
-
-  document.getElementById('toggleButton').addEventListener('click', toggleTables);
-  const canvas = document.getElementById('difficulty_level_chart');
-  canvas.style.width = '500px';
-  canvas.style.height = '120px';
-  const ctx = document.getElementById('difficulty_level_chart').getContext('2d');
-  const difficulty_level_chart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: ['Easy', 'Medium', 'Hard', 'Overall'],
-      datasets: [{
-        label: 'Fuyu-8B',
-        data: [28.9, 27, 26.4, 27.4],
-        backgroundColor: 'rgba(196, 123, 160, 0.6)',
-        borderColor: 'rgba(196, 123, 160, 1)',
-        borderWidth: 1,
-        hoverBackgroundColor: 'rgba(196, 123, 160, 1)'
-      },
-      {
-        label: 'Qwen-VL-7B',
-        data: [39.4, 31.9, 27.6, 32.9],
-        backgroundColor: 'rgba(245, 123, 113, 0.6)',
-        borderColor: 'rgba(245, 123, 113, 1)',
-        borderWidth: 1,
-        hoverBackgroundColor: 'rgba(245, 123, 113, 1)'
-      },
-      {
-        label: 'LLaVA-1.5-13B',
-        data: [41.3, 32.7, 26.7, 33.6],
-        backgroundColor: 'rgba(255, 208, 80, 0.6)',
-        borderColor: 'rgba(255, 208, 80, 1)',
-        borderWidth: 1,
-        hoverBackgroundColor: 'rgba(255, 208, 80, 1)'
-      },
-      {
-        label: 'InstructBLIP-T5-XXL',
-        data: [40.3, 32.3, 29.4, 33.8],
-        backgroundColor: 'rgba(110, 194, 134, 0.6)',
-        borderColor: 'rgba(110, 194, 134, 1)',
-        borderWidth: 1,
-        hoverBackgroundColor: 'rgba(110, 194, 134, 1)'
-      },
-      {
-        label: 'BLIP-2 FLAN-T5-XXL',
-        data: [41, 32.7, 28.5, 34],
-        backgroundColor: 'rgba(255, 153, 78, 0.6)',
-        borderColor: 'rgba(255, 153, 78, 1)',
-        borderWidth: 1,
-        hoverBackgroundColor: 'rgba(255, 153, 78, 1)'
-      },
-      {
-        label: 'GPT-4V',
-        data: [76.1, 55.6, 31.2, 55.7],
-        backgroundColor: 'rgba(117, 209, 215, 0.6)',
-        borderColor: 'rgba(117, 209, 215, 1)',
-        borderWidth: 1,
-        hoverBackgroundColor: 'rgba(117, 209, 215, 1)'
-      }]
-    },
-    options: {
-    scales: {
-      y: {
-        beginAtZero: true,
-        min: 0,
-        max: 100,
-        ticks: {
-          stepSize: 20,
-          font: {
-            size: 16
-          }
-        }
-      },
-      x: {
-        ticks: {
-          font: {
-            size: 16 // 设置X轴字体大小
-          }
-        }
-      }
-    },
-    plugins: {
-      legend: {
-        labels: {
-          font: {
-            size: 16 // 设置标签文字大小
-          }
-        }
-      },
-      tooltip: {
-        callbacks: {
-          label: function(context) {
-            return context.dataset.label + ': ' + context.parsed.y;
-          }
-        }
-      }
-    },
-      onHover: (event, chartElement) => {
-        event.native.target.style.cursor = chartElement[0] ? 'pointer' : 'default';
-      }
-    }
-  });
-  document.addEventListener('DOMContentLoaded', function() {
-    // Data for the "Diagrams" chart
-    const data_Diagrams = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [27.6, 30.1, 31.8, 30.0, 32.0, 46.8],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-
-    // "data_Diagrams" chart
-    new Chart(document.getElementById('chart_Diagrams'), {
-        type: 'bar',
-        data: data_Diagrams,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_Tables" chart
-    const data_Tables  = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [26.6, 29.0, 29.8, 27.8, 27.8, 61.8],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_Tables'), {
-        type: 'bar',
-        data: data_Tables,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_PlotsAndCharts " chart
-    const data_PlotsAndCharts   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [24.8, 31.8, 36.2, 30.4, 35.8, 55.6],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_PlotsAndCharts'), {
-        type: 'bar',
-        data: data_PlotsAndCharts ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_ChemicalStructures " chart
-    const data_ChemicalStructures   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [25.0, 27.2, 27.1, 26.7, 25.5, 50.6],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_ChemicalStructures'), {
-        type: 'bar',
-        data: data_ChemicalStructures ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_Photographs " chart
-    const data_Photographs   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [27.6, 40.5, 41.4, 44.4, 42.0, 64.2],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_Photographs'), {
-        type: 'bar',
-        data: data_Photographs ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_Paintings " chart
-    const data_Paintings   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [28.7, 57.2, 53.6, 56.3, 52.1, 75.9],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_Paintings'), {
-        type: 'bar',
-        data: data_Paintings ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_GeometricShapes " chart
-    const data_GeometricShapes   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [21.1, 25.3, 21.4, 25.6, 28.3, 40.2],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_GeometricShapes'), {
-        type: 'bar',
-        data: data_GeometricShapes ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_SheetMusic " chart
-    const data_SheetMusic   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [35.2, 33.4, 34.6, 35.8, 34.9, 38.8],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_SheetMusic'), {
-        type: 'bar',
-        data: data_SheetMusic ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_MedicalImages " chart
-    const data_MedicalImages   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [25.4, 29.8, 31.6, 36.4, 29.8, 59.6],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_MedicalImages'), {
-        type: 'bar',
-        data: data_MedicalImages ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_PathologicalImages " chart
-    const data_PathologicalImages   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [26.5, 27.7, 31.2, 35.2, 35.6, 63.6],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_PathologicalImages'), {
-        type: 'bar',
-        data: data_PathologicalImages ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_MicroscopicImages " chart
-    const data_MicroscopicImages   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [27.0, 37.6, 29.2, 36.3, 32.7, 58.0],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_MicroscopicImages'), {
-        type: 'bar',
-        data: data_MicroscopicImages ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_MRIsCTScansXrays " chart
-    const data_MRIsCTScansXrays   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [21.7, 36.9, 33.3, 39.4, 29.8, 50.0],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_MRIsCTScansXrays'), {
-        type: 'bar',
-        data: data_MRIsCTScansXrays ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_SketchesAndDrafts " chart
-    const data_SketchesAndDrafts   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [37.0, 32.1, 29.9, 38.0, 33.7, 55.4],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_SketchesAndDrafts'), {
-        type: 'bar',
-        data: data_SketchesAndDrafts ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_Maps " chart
-    const data_Maps   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [38.2, 36.5, 45.9, 47.6, 43.5, 61.8],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_Maps'), {
-        type: 'bar',
-        data: data_Maps ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_TechnicalBlueprints " chart
-    const data_TechnicalBlueprints   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [24.7, 25.9, 28.4, 25.3, 27.8, 38.9],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_TechnicalBlueprints'), {
-        type: 'bar',
-        data: data_TechnicalBlueprints ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_TreesAndGraphs " chart
-    const data_TreesAndGraphs   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [30.1, 28.1, 28.8, 28.8, 34.9, 50.0],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_TreesAndGraphs'), {
-        type: 'bar',
-        data: data_TreesAndGraphs ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_MathematicalNotations " chart
-    const data_MathematicalNotations   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [15.8, 27.1, 22.6, 21.8, 21.1, 45.9],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_MathematicalNotations'), {
-        type: 'bar',
-        data: data_MathematicalNotations ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_ComicsAndCartoons " chart
-    const data_ComicsAndCartoons   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [29.0, 51.9, 49.6, 54.2, 51.1, 68.7],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_ComicsAndCartoons'), {
-        type: 'bar',
-        data: data_ComicsAndCartoons ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_Sculpture " chart
-    const data_Sculpture   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [30.8, 46.2, 49.6, 51.3, 53.0, 76.1],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_Sculpture'), {
-        type: 'bar',
-        data: data_Sculpture ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_Portraits " chart
-    const data_Portraits   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [20.9, 52.7, 46.2, 54.9, 47.3, 70.3],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_Portraits'), {
-        type: 'bar',
-        data: data_Portraits ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_Screenshots " chart
-    const data_Screenshots   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [38.6, 35.7, 38.6, 34.3, 47.1, 65.7],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_Screenshots'), {
-        type: 'bar',
-        data: data_Screenshots ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_Other " chart
-    const data_Other   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [28.3, 38.3, 50.0, 51.7, 58.3, 68.3],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_Other'), {
-        type: 'bar',
-        data: data_Other ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_Poster " chart
-    const data_Poster   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [38.6, 50.9, 52.6, 61.4, 64.9, 80.7],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_Poster'), {
-        type: 'bar',
-        data: data_Poster ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_IconsAndSymbols " chart
-    const data_IconsAndSymbols   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [23.8, 66.7, 57.1, 59.5, 59.5, 78.6],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_IconsAndSymbols'), {
-        type: 'bar',
-        data: data_IconsAndSymbols ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_HistoricalTimelines " chart
-    const data_HistoricalTimelines   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [30.0, 36.7, 40.0, 43.3, 43.3, 63.3],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_HistoricalTimelines'), {
-        type: 'bar',
-        data: data_HistoricalTimelines ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_3DRenderings " chart
-    const data_3DRenderings   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [33.3, 28.6, 57.1, 38.1, 47.6, 47.6],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_3DRenderings'), {
-        type: 'bar',
-        data: data_3DRenderings ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_DNASequences " chart
-    const data_DNASequences   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [20.0, 45.0, 25.0, 25.0, 45.0, 55.0],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_DNASequences'), {
-        type: 'bar',
-        data: data_DNASequences ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_Landscapes " chart
-    const data_Landscapes   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [43.8, 43.8, 50.0, 31.2, 62.5, 68.8],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_Landscapes'), {
-        type: 'bar',
-        data: data_Landscapes ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_LogosAndBranding " chart
-    const data_LogosAndBranding   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [21.4, 57.1, 64.3, 35.7, 50.0, 85.7],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_LogosAndBranding'), {
-        type: 'bar',
-        data: data_LogosAndBranding ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-
-    // "data_Advertisements " chart
-    const data_Advertisements   = {
-        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
-        datasets: [{
-            data: [30.0, 60.0, 50.0, 60.0, 70.0, 100.0],
-            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
-            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
-            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
-        }]
-    };
-    new Chart(document.getElementById('chart_Advertisements'), {
-        type: 'bar',
-        data: data_Advertisements ,
-        options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 100,
-            ticks: {
-              stepSize: 20
-            }
-          },
-          x: {
-            display: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-          }
-        }
-      }
-    });
-});
-
-</script>
-
-<style>
-  .hidden {
-      display: none;
-  }
-  .sortable:hover {
-      cursor: pointer;
-  }
-  .asc::after {
-      content: ' ↑';
-  }
-  .desc::after {
-      content: ' ↓';
-  }
-  #toggleButton {
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
-    color: #555555;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 25px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition-duration: 0.4s;
-  }
-
-  #toggleButton:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); /* 鼠标悬停时的阴影效果 */
-  }
-
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-top: 5px;
-    border: 1px solid #ddd;
-    font-size: 14px;
-  }
-
-  th, td {
-      text-align: left;
-      padding: 8px;
-  }
-
-  th {
-      background-color: #f2f2f2;
-      border-bottom: 2px solid #ddd;
-  }
-
-  td:hover {background-color: #ffffff;}
-</style>
-
-
-
-<script>
-(function() {
-  var ws = new WebSocket('ws://' + window.location.host +
-             '/jb-server-page?reloadMode=RELOAD_ON_SAVE&'+
-             'referrer=' + encodeURIComponent(window.location.pathname));
-  ws.onmessage = function (msg) {
-      if (msg.data === 'reload') {
-          window.location.reload();
-      }
-      if (msg.data.startsWith('update-css ')) {
-          var messageId = msg.data.substring(11);
-          var links = document.getElementsByTagName('link');
-          for (var i = 0; i < links.length; i++) {
-              var link = links[i];
-              if (link.rel !== 'stylesheet') continue;
-              var clonedLink = link.cloneNode(true);
-              var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
-              if (newHref !== link.href) {
-                clonedLink.href = newHref;
-              }
-              else {
-                var indexOfQuest = newHref.indexOf('?');
-                if (indexOfQuest >= 0) {
-                  // to support ?foo#hash
-                  clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' +
-                                    newHref.substring(indexOfQuest + 1);
-                }
-                else {
-                  clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
-                }
-              }
-              link.replaceWith(clonedLink);
-          }
-      }
-  };
-})();
-</script></body><div style="all: initial;"><div id="__hcfy__" style="all: initial;"></div></div></html>
